@@ -1,61 +1,3 @@
-body {
-    margin: 0;
-    font-size: 18px;
-}
-
-/* header section start */
-header {
-    height: 61px;
-    background-color: white;
-    box-shadow: 0px 4px 15px 1px rgba(0, 0, 0, 0.09);
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 16px;
-}
-
-header nav a {
-    font-size: 14px;
-    color: black;
-    font-weight: 900;
-
-    text-decoration: none;
-}
-
-header nav a + a {
-    margin-left: 12px;
-}
-
-.donate {
-    width: 80px;
-    height: 28px;
-
-    position: relative;
-    padding: 4px 20px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: #9E76F8;
-    color: white;
-    font-weight: 900;
-
-    border-radius: 10px;
-    border-bottom: 5px solid #EFF400;
-}
-/* header section end */
-
-.bold {
-    font-weight: 600;
-}
-
-.section_content {
-    margin: 0 16px;
-}
-
-/* about section start */
 .about_header {
     position: relative;
     background-color: #9E76F8;
@@ -126,11 +68,3 @@ header nav a + a {
     background-color: white;
     border-radius: 23px;
 }
-/* about section end */
-
-/* report section start*/
-.report {
-    background-color: #9E76F8;
-    height: 1000px;
-}
-/* report section end*/

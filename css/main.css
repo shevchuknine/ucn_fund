@@ -1,0 +1,16 @@
+@import "./header.css";
+@import "./section-about.css";
+@import "./section-report.css";
+
+body {
+    margin: 0;
+    font-size: 18px;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.section_content {
+    margin: 0 16px;
+}
