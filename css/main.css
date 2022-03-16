@@ -1,10 +1,14 @@
 @import "./header.css";
 @import "./section-about.css";
 @import "./section-report.css";
+@import "./section-funds.css";
+@import "./section-requisites.css";
+@import "./section-buttons.css";
 
 body {
     margin: 0;
     font-size: 18px;
+    font-family: Mariupol, Arial, sans-serif;
 }
 
 .bold {

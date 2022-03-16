@@ -1,0 +1,40 @@
+.buttons {
+    padding: 15px 35px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons_top {
+    background: #000000;
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 1;
+    color: #FFFFFF;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.buttons_top svg {
+    margin-left: 5px;
+}
+
+.buttons_donate {
+    padding-bottom: 9px;
+    border-radius: 10px;
+    background-color: #EFF400;
+    text-decoration: none;
+}
+
+.buttons_donate_inner {
+    display: inline-block;
+    padding: 10px 35px;
+    border-radius: 10px;
+    background-color: #9E76F8;
+    font-family: 'KTF Rublena', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 1;
+    color: #FFFFFF;
+}
