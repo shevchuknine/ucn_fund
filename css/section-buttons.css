@@ -13,7 +13,6 @@
     padding: 15px;
     display: flex;
     align-items: center;
-    text-decoration: none;
 }
 
 .buttons_top svg {
@@ -24,7 +23,6 @@
     padding-bottom: 9px;
     border-radius: 10px;
     background-color: #EFF400;
-    text-decoration: none;
 }
 
 .buttons_donate_inner {

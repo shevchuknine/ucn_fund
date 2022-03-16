@@ -11,10 +11,7 @@ header {
 
 header nav a {
     font-size: 14px;
-    color: black;
     font-weight: 900;
-
-    text-decoration: none;
 }
 
 header nav a + a {

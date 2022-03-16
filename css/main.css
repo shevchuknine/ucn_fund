@@ -4,6 +4,7 @@
 @import "./section-funds.css";
 @import "./section-requisites.css";
 @import "./section-buttons.css";
+@import "./footer.css";
 
 body {
     margin: 0;
@@ -16,4 +17,18 @@ body {
 
 .section_content {
     margin: 0 16px;
+}
+
+.button {
+    display: inline-block;
+    padding: 16px 28px;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }

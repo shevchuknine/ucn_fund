@@ -137,13 +137,8 @@
 /* report gallery end */
 
 .report_more {
-    width: 160px;
-    height: 56px;
-    margin: 40px auto;
-    background-color: black;
-    border-radius: 16px;
+    margin: 40px 0;
 
     display: flex;
     justify-content: center;
-    align-items: center;
 }
