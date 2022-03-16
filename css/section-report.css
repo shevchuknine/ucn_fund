@@ -1,6 +1,8 @@
 .report {
     background-color: #9E76F8;
     color: white;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
 }
 
 /* header images start */
@@ -137,7 +139,7 @@
 .report_more {
     width: 160px;
     height: 56px;
-    margin: 44px auto 0 auto;
+    margin: 40px auto;
     background-color: black;
     border-radius: 16px;
 
