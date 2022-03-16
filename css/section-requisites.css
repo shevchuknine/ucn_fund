@@ -1,0 +1,52 @@
+.requisites {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.requisites_item {
+    background: #9E76F8;
+    border-radius: 35px;
+    padding: 0 20px;
+    margin-bottom: 5px;
+}
+
+.requisites_eur, .requisites_usd {
+    padding: 20px 30px;
+    border-radius: 35px;
+}
+
+.requisites_eur {
+    background: #36DBFF;
+}
+
+.requisites_usd {
+    background: #36EBB5;
+}
+
+.requisites_title {
+    font-family: 'KTF Rublena', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 62px;
+    margin-bottom: 10px;
+}
+
+.requisites_block {
+    font-size: 14px;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.requisites_banks {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.requisites_bank {
+    width: 50%;
+}
+
+.requisites_bank, .requisites_payments {
+    font-size: 10px;
+    line-height: 1;
+}
