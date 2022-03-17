@@ -1,0 +1,160 @@
+.about_header {
+    position: relative;
+    background-color: #9E76F8;
+    height: 264px;
+    border-radius: 0 0 23px 23px;
+    color: white;
+
+    @include laptop {
+        height: 664px;
+        border-radius: 0 0 80px 80px;
+    }
+}
+
+.about_header-title {
+    padding-top: 15px;
+    width: 260px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+
+    @include laptop {
+        margin: 0;
+        width: 640px;
+        padding: 128px 0 0 48px;
+    }
+
+    @include desktop {
+        padding: 128px 0 0 68px;
+    }
+}
+
+.about_header-title-main {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 36px;
+    margin: 0;
+
+    @include laptop {
+        text-align: left;
+        font-size: 110px;
+        line-height: 88px;
+    }
+}
+
+.about_header-title-flag {
+    position: absolute;
+    width: 26px;
+    top: 62px;
+    left: 228px;
+
+    @include laptop {
+        width: 124px;
+        top: 214px;
+        left: 474px;
+    }
+
+    @include desktop {
+        left: 494px;
+    }
+
+    & > div {
+        height: 12px;
+        @include laptop {
+            height: 42px;
+        }
+        &:first-child {
+            background-color: #3B6BF2;
+        }
+        &:last-child {
+            background-color: #FAED07;
+        }
+    }
+}
+
+.about_header-title-sec {
+    font-size: 12px;
+    margin-top: 8px;
+
+    @include laptop {
+        font-size: 28px;
+        line-height: 28px;
+        margin-top: 80px;
+        text-align: center;
+    }
+}
+
+.about_header-back {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -2px;
+    width: 110px;
+    height: 114px;
+
+    @include laptop {
+        left: unset;
+        right: 20px;
+        transform: unset;
+        bottom: -7px;
+        width: 368px;
+        height: 382px;
+    }
+
+    @include desktop {
+        right: 100px;
+        bottom: -6px;
+        width: 468px;
+        height: 482px;
+    }
+}
+
+.about_text {
+    margin: 36px 20px 0 20px;
+
+    @include laptop {
+        width: 800px;
+        margin: 100px auto;
+        text-align: center;
+    }
+
+    &--footer {
+        margin-top: 80px;
+        margin-bottom: 194px;
+    }
+}
+
+.about_main {
+    background-color: #9E76F8;
+    position: relative;
+    left: -15px;
+    width: calc(100% + 30px);
+    margin: 60px 0;
+
+    font-weight: 900;
+
+    @include laptop {
+        position: static;
+        width: 800px;
+        margin: 0 auto;
+        border-left: 32px solid #9E76F8;
+        border-right: 32px solid #9E76F8;
+        border-radius: 32px;
+    }
+}
+
+.about_main-content {
+    margin: 0 6px;
+    padding: 12px 28px;
+    background-color: white;
+    border-radius: 23px;
+
+    @include laptop {
+        font-size: 52px;
+        line-height: 52px;
+        margin: 0;
+        padding: 32px 100px;
+        border-radius: 32px;
+    }
+}

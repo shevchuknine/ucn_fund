@@ -1,0 +1,68 @@
+header {
+    background-color: white;
+    box-shadow: 0 4px 15px 1px rgba(0, 0, 0, 0.09);
+}
+
+.header_content {
+    max-width: 1440px;
+    height: 60px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    position: relative;
+    z-index: 1;
+
+    @include laptop {
+        height: 112px;
+        padding: 0 44px;
+    }
+
+    & > .header_donate-container {
+        flex: 1;
+
+        @include laptop {
+            flex: 0;
+        }
+    }
+
+    & > a {
+        font-size: 14px;
+        font-weight: 900;
+
+        @include laptop {
+            font-size: 24px;
+        }
+
+        & + a {
+            margin-left: 12px;
+            @include laptop {
+                margin-left: 56px;
+            }
+        }
+    }
+
+    & > .header_donate-container + a {
+        margin-left: 12px;
+        @include laptop {
+            margin-left: 56px;
+        }
+    }
+}
+
+.header_icon {
+    display: none;
+
+    width: 176px;
+    height: 84px;
+
+    @include laptop {
+        display: block;
+        flex: 1;
+    }
+
+    & > svg {
+        height: 100%;
+    }
+}

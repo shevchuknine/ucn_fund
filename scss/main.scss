@@ -1,0 +1,92 @@
+@import "./mixins.scss";
+@import "./header.scss";
+@import "./section-about.scss";
+@import "./section-report.scss";
+@import "./section-donate.scss";
+@import "./footer.scss";
+
+body {
+    margin: 0;
+    font-size: 18px;
+
+    @include laptop {
+        font-size: 24px;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.section_content {
+    padding: 0 16px;
+    max-width: 1440px;
+
+    @include laptop {
+        padding: 0 44px;
+    }
+
+    @include desktop {
+        margin: 0 auto;
+    }
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 20px;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+
+    svg {
+        margin-left: 5px;
+    }
+}
+
+.button_donate {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 12px;
+    background-color: #9E76F8;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 1;
+
+    color: white;
+
+    position: relative;
+    margin-bottom: 8px;
+    text-align: center;
+    white-space: nowrap;
+
+    @include laptop {
+        padding: 8px 40px;
+        font-size: 24px;
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: calc(100% + 8px);
+        background-color: #EFF400;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 12px;
+        z-index: -1;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

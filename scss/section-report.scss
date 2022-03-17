@@ -1,0 +1,189 @@
+.report {
+    background-color: #9E76F8;
+    color: white;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+
+.report_header-images {
+    position: relative;
+    width: 288px;
+    height: 80px;
+    margin: 0 auto;
+
+    @include laptop {
+        width: 800px;
+        height: 200px;
+    }
+}
+
+.report_header-image {
+    position: absolute;
+
+    &--1 {
+        width: 100px;
+        height: 76px;
+
+        top: -38px;
+        left: -10px;
+        z-index: 2;
+
+        @include laptop {
+            width: 250px;
+            height: 190px;
+
+            top: -76px;
+            left: 0px;
+        }
+    }
+
+    &--2 {
+        width: 100px;
+        height: 76px;
+
+        top: -60px;
+        left: 78px;
+
+        @include laptop {
+            width: 250px;
+            height: 190px;
+
+            top: -120px;
+            left: 200px;
+        }
+    }
+
+    &--3 {
+        width: 66px;
+        height: 44px;
+
+        top: -20px;
+        left: 146px;
+        z-index: 2;
+
+        @include laptop {
+            width: 165px;
+            height: 110px;
+
+            top: -20px;
+            left: 380px;
+        }
+    }
+
+    &--4 {
+        width: 100px;
+        height: 76px;
+
+        top: -58px;
+        left: 200px;
+        z-index: 3;
+
+        @include laptop {
+            width: 250px;
+            height: 190px;
+
+            top: -116px;
+            left: 520px;
+        }
+    }
+}
+
+.report_title {
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 36px;
+}
+
+.report_text {
+    width: 800px;
+    margin: 36px auto;
+
+    @include laptop {
+        margin: 68px auto;
+    }
+
+    &--footer {
+        text-align: center;
+        @include laptop {
+            width: 600px;
+        }
+    }
+}
+
+/* report gallery start */
+
+.report_gallery {
+    width: 288px;
+    height: 440px;
+    margin: 40px auto 80px auto;
+    position: relative;
+}
+
+.report_gallery-background {
+    width: 100%;
+    height: 400px;
+}
+
+.report_gallery-image {
+    position: absolute;
+    border-radius: 12px;
+
+    &--1 {
+        top: 12px;
+        left: 152px;
+    }
+
+    &--2 {
+        top: 28px;
+        left: 0px;
+    }
+
+    &--3 {
+        top: 124px;
+        left: 84px;
+        z-index: 2;
+    }
+
+    &--4 {
+        top: 224px;
+        left: -8px;
+    }
+
+    &--5 {
+        top: 190px;
+        left: 192px;
+    }
+
+    &--6 {
+        top: 320px;
+        left: 160px;
+    }
+
+    &--7 {
+        top: 400px;
+        left: 12px;
+    }
+}
+
+.report_gallery-footer {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: 452px;
+    left: 220px;
+}
+/* report gallery end */
+
+.report_more {
+    margin: 40px 0;
+
+    display: flex;
+    justify-content: center;
+
+    @include laptop {
+        margin: 120px 0;
+    }
+}
