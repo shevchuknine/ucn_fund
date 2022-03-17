@@ -1,14 +1,16 @@
 @import "./header.css";
 @import "./section-about.css";
 @import "./section-report.css";
-@import "./section-funds.css";
-@import "./section-requisites.css";
-@import "./section-buttons.css";
+@import "./section-donate.css";
 @import "./footer.css";
 
 body {
     margin: 0;
     font-size: 18px;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 .bold {
@@ -20,13 +22,53 @@ body {
 }
 
 .button {
-    display: inline-block;
-    padding: 16px 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 20px;
     border-radius: 12px;
     background-color: black;
     color: white;
     text-align: center;
+    white-space: nowrap;
 }
+
+.button svg {
+    margin-left: 5px;
+}
+
+.button_donate {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 12px;
+    background-color: #9E76F8;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 1;
+    color: white;
+    position: relative;
+    margin-bottom: 8px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.button_donate_big {
+    font-size: 24px;
+}
+
+.button_donate:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: calc(100% + 8px);
+    background-color: #EFF400;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 12px;
+    z-index: -1;
+}
+
 
 a {
     text-decoration: none;
