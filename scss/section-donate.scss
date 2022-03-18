@@ -1,17 +1,12 @@
-.funds {
-    padding: 56px 0;
-}
-
 .funds_title {
     font-family: 'KTF Rublena', Arial, sans-serif;
     font-weight: 900;
     font-size: 24px;
     text-align: center;
-    margin-bottom: 32px;
+    margin: 56px auto 0;
     line-height: 1;
 
     @include laptop {
-        margin: 0 auto 60px auto;
         width: 680px;
         text-align: center;
         font-size: 56px;
@@ -21,6 +16,11 @@
 .funds_items {
     display: flex;
     justify-content: center;
+    margin-top: 32px;
+
+    @include laptop {
+        margin-top: 60px;
+    }
 }
 
 .funds_item {
@@ -67,7 +67,7 @@
 }
 
 .requisites {
-    padding: 20px 0;
+    margin-top: 64px;
     display: flex;
     flex-direction: column;
 
@@ -97,6 +97,10 @@
     height: 100%;
     padding: 20px;
     border-radius: 32px;
+
+    @include laptop {
+        padding: 20px 52px 48px;
+    }
 }
 
 .requisites_eur {
@@ -111,18 +115,29 @@
     font-family: 'KTF Rublena', Arial, sans-serif;
     font-weight: 900;
     font-size: 62px;
-    margin-bottom: 12px;
+
+    @include laptop {
+        font-size: 100px;
+    }
 }
 
 .requisites_block {
     font-size: 14px;
     line-height: 1;
-    margin-bottom: 16px;
+    margin-top: 12px;
+
+    @include laptop {
+        font-size: 24px;
+    }
 }
 
 .requisites_banks {
     display: flex;
-    margin-bottom: 16px;
+    margin-top: 16px;
+
+    @include laptop {
+        margin-top: 24px;
+    }
 }
 
 .requisites_bank {
@@ -132,14 +147,25 @@
 .requisites_bank, .requisites_payments {
     font-size: 10px;
     line-height: 1;
+
+    @include laptop {
+        font-size: 16px;
+    }
+}
+
+.requisites_payments {
+    margin-top: 16px;
+
+    @include laptop {
+        margin-top: 32px;
+    }
 }
 
 .buttons {
-    padding: 16px 0 60px;
     display: flex;
     justify-content: space-between;
     max-width: 380px;
-    margin: 0 auto;
+    margin: 36px auto 0;
 
 
     & > .button_donate {
@@ -156,6 +182,7 @@
     @include laptop {
         max-width: unset;
         justify-content: center;
+        margin-top: 86px;
     }
 
     & > a {

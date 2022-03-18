@@ -3,6 +3,11 @@
     color: white;
     border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
+    margin-top: 196px;
+    padding-bottom: 40px;
+    @include laptop {
+        padding-bottom: 120px;
+    }
 }
 
 .report_header-images {
@@ -98,17 +103,18 @@
 }
 
 .report_text {
-    width: 800px;
-    margin: 36px auto;
+    max-width: 800px;
+    margin: 36px auto 0;
 
     @include laptop {
-        margin: 68px auto;
+        margin: 68px auto 0;
     }
 
     &--footer {
         text-align: center;
         @include laptop {
             width: 600px;
+            margin-top: 128px;
         }
     }
 }
@@ -117,9 +123,13 @@
 
 .report_gallery {
     width: 288px;
-    height: 440px;
-    margin: 40px auto 80px auto;
+    height: 480px;
+    margin: 72px auto 0;
     position: relative;
+
+    @include laptop {
+        margin: 100px auto 0;
+    }
 }
 
 .report_gallery-background {
@@ -178,12 +188,12 @@
 /* report gallery end */
 
 .report_more {
-    margin: 40px 0;
+    margin: 40px 0 0;
 
     display: flex;
     justify-content: center;
 
     @include laptop {
-        margin: 120px 0;
+        margin: 120px 0 0;
     }
 }

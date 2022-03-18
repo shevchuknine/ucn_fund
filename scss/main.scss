@@ -3,6 +3,8 @@
 @import "./section-about.scss";
 @import "./section-report.scss";
 @import "./section-donate.scss";
+@import "./section-team.scss";
+@import "./section-projects.scss";
 @import "./footer.scss";
 
 body {
@@ -67,9 +69,17 @@ body {
     text-align: center;
     white-space: nowrap;
 
+    &_desktop {
+        display: none;
+    }
+
     @include laptop {
         padding: 8px 40px;
         font-size: 24px;
+
+        &_desktop {
+            display: inline-block;
+        }
     }
 
     &:after {

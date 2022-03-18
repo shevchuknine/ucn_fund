@@ -1,6 +1,18 @@
 header {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 100%;
     background-color: white;
     box-shadow: 0 4px 15px 1px rgba(0, 0, 0, 0.09);
+}
+
+header + section {
+    margin-top: 60px;
+
+    @include laptop {
+        margin-top: 112px;
+    }
 }
 
 .header_content {
