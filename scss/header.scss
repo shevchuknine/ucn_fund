@@ -16,6 +16,8 @@ header + section {
 }
 
 .header_content {
+    @extend .rublena_bold;
+
     max-width: 1440px;
     height: 60px;
     margin: 0 auto;
@@ -41,14 +43,14 @@ header + section {
 
     & > a {
         font-size: 14px;
-        font-weight: 900;
+        font-weight: 700;
 
         @include laptop {
             font-size: 24px;
         }
 
         & + a {
-            margin-left: 12px;
+            margin-left: 20px;
             @include laptop {
                 margin-left: 56px;
             }

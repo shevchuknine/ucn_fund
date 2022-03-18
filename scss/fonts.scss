@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Mariupol";
+  src: url("/fonts/Mariupol-Regular.woff") format("woff"),
+  url("/fonts/Mariupol-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Mariupol";
+  src: url("/fonts/Mariupol-Bold.woff") format("woff"),
+  url("/fonts/Mariupol-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "KTF Rublena";
+  src: url("/fonts/KTFRublena-Solid.otf") format("opentype"),
+  url('/fonts/KTFRublena-Solid.otf')  format('truetype');
+  font-weight: 700;
+}

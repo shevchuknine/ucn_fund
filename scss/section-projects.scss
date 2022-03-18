@@ -9,9 +9,10 @@
 }
 
 .projects_title {
-  font-weight: 900;
+  @extend .rublena_bold;
+
   text-align: center;
-  font-size: 48px;
+  font-size: 38px;
 
   @include laptop {
     font-size: 120px;
@@ -54,7 +55,8 @@
   }
 
   &-name {
-    font-weight: 900;
+    @extend .rublena_bold;
+
     font-size: 24px;
 
     @include laptop {

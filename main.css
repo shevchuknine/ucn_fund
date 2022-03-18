@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "Mariupol";
+  src: url("/fonts/Mariupol-Regular.woff") format("woff"), url("/fonts/Mariupol-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Mariupol";
+  src: url("/fonts/Mariupol-Bold.woff") format("woff"), url("/fonts/Mariupol-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "KTF Rublena";
+  src: url("/fonts/KTFRublena-Solid.otf") format("opentype"), url("/fonts/KTFRublena-Solid.otf") format("truetype");
+  font-weight: 700;
+}
 header {
   position: fixed;
   z-index: 10;
@@ -42,7 +57,7 @@ header + section {
 }
 .header_content > a {
   font-size: 14px;
-  font-weight: 900;
+  font-weight: 700;
 }
 @media (min-width: 1024px) {
   .header_content > a {
@@ -50,7 +65,7 @@ header + section {
   }
 }
 .header_content > a + a {
-  margin-left: 12px;
+  margin-left: 20px;
 }
 @media (min-width: 1024px) {
   .header_content > a + a {
@@ -117,15 +132,14 @@ header + section {
 
 .about_header-title-main {
   text-align: center;
-  font-size: 50px;
-  font-weight: 900;
+  font-size: 44px;
   line-height: 36px;
   margin: 0;
 }
 @media (min-width: 1024px) {
   .about_header-title-main {
     text-align: left;
-    font-size: 110px;
+    font-size: 106px;
     line-height: 88px;
   }
 }
@@ -133,19 +147,19 @@ header + section {
 .about_header-title-flag {
   position: absolute;
   width: 26px;
-  top: 62px;
+  top: 61px;
   left: 228px;
 }
 @media (min-width: 1024px) {
   .about_header-title-flag {
     width: 124px;
-    top: 214px;
-    left: 474px;
+    top: 215px;
+    left: 508px;
   }
 }
 @media (min-width: 1440px) {
   .about_header-title-flag {
-    left: 494px;
+    left: 528px;
   }
 }
 .about_header-title-flag > div {
@@ -207,10 +221,14 @@ header + section {
   margin: 36px 20px 0 20px;
 }
 @media (min-width: 1024px) {
+  .about_text--top {
+    text-align: center;
+  }
+}
+@media (min-width: 1024px) {
   .about_text {
     width: 800px;
     margin: 100px auto 0;
-    text-align: center;
   }
 }
 .about_text--footer {
@@ -223,7 +241,7 @@ header + section {
   left: -15px;
   width: calc(100% + 30px);
   margin: 60px 0 0;
-  font-weight: 900;
+  font-weight: 700;
 }
 @media (min-width: 1024px) {
   .about_main {
@@ -257,12 +275,18 @@ header + section {
   color: white;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
-  margin-top: 196px;
+  margin-top: 156px;
   padding-bottom: 40px;
 }
 @media (min-width: 1024px) {
   .report {
+    margin-top: 196px;
     padding-bottom: 120px;
+  }
+}
+@media (min-width: 1440px) {
+  .report {
+    margin-top: 296px;
   }
 }
 
@@ -276,6 +300,11 @@ header + section {
   .report_header-images {
     width: 800px;
     height: 200px;
+  }
+}
+@media (min-width: 1440px) {
+  .report_header-images {
+    height: 240px;
   }
 }
 
@@ -297,6 +326,14 @@ header + section {
     left: 0px;
   }
 }
+@media (min-width: 1440px) {
+  .report_header-image--1 {
+    width: 354px;
+    height: 266px;
+    top: -104px;
+    left: -172px;
+  }
+}
 .report_header-image--2 {
   width: 100px;
   height: 76px;
@@ -309,6 +346,14 @@ header + section {
     height: 190px;
     top: -120px;
     left: 200px;
+  }
+}
+@media (min-width: 1440px) {
+  .report_header-image--2 {
+    width: 354px;
+    height: 266px;
+    top: -200px;
+    left: 140px;
   }
 }
 .report_header-image--3 {
@@ -326,6 +371,12 @@ header + section {
     left: 380px;
   }
 }
+@media (min-width: 1440px) {
+  .report_header-image--3 {
+    width: 232px;
+    height: 157px;
+  }
+}
 .report_header-image--4 {
   width: 100px;
   height: 76px;
@@ -341,14 +392,32 @@ header + section {
     left: 520px;
   }
 }
+@media (min-width: 1440px) {
+  .report_header-image--4 {
+    width: 354px;
+    height: 266px;
+    top: -156px;
+    left: 580px;
+  }
+}
 
 .report_title {
   margin: 0;
   text-transform: uppercase;
   text-align: center;
-  font-size: 36px;
-  font-weight: 900;
-  line-height: 36px;
+  font-size: 35px;
+  line-height: 30px;
+}
+@media (min-width: 1024px) {
+  .report_title {
+    font-size: 84px;
+    line-height: 84px;
+  }
+}
+@media (min-width: 1440px) {
+  .report_title {
+    font-size: 104px;
+  }
 }
 
 .report_text {
@@ -379,13 +448,32 @@ header + section {
 }
 @media (min-width: 1024px) {
   .report_gallery {
+    width: 920px;
+    height: 500px;
     margin: 100px auto 0;
   }
 }
+@media (min-width: 1440px) {
+  .report_gallery {
+    height: 800px;
+  }
+}
 
-.report_gallery-background {
-  width: 100%;
-  height: 400px;
+@media (min-width: 1024px) {
+  .report_gallery-background {
+    transform: rotate(90deg);
+    height: 800px;
+    position: absolute;
+    left: 180px;
+    top: -120px;
+  }
+}
+@media (min-width: 1440px) {
+  .report_gallery-background {
+    height: 1160px;
+    left: 70px;
+    top: -190px;
+  }
 }
 
 .report_gallery-image {
@@ -393,33 +481,161 @@ header + section {
   border-radius: 12px;
 }
 .report_gallery-image--1 {
+  width: 101px;
+  height: 72px;
   top: 12px;
   left: 152px;
 }
+@media (min-width: 1024px) {
+  .report_gallery-image--1 {
+    width: 220px;
+    height: 158px;
+    top: 72px;
+    left: 622px;
+    z-index: 2;
+  }
+}
+@media (min-width: 1440px) {
+  .report_gallery-image--1 {
+    width: 275px;
+    height: 198px;
+    top: 92px;
+    left: 722px;
+    z-index: 2;
+  }
+}
 .report_gallery-image--2 {
+  width: 93px;
+  height: 123px;
   top: 28px;
   left: 0px;
 }
+@media (min-width: 1024px) {
+  .report_gallery-image--2 {
+    width: 230px;
+    height: 304px;
+    top: 72px;
+    left: 24px;
+  }
+}
+@media (min-width: 1440px) {
+  .report_gallery-image--2 {
+    width: 287px;
+    height: 380px;
+    top: 142px;
+    left: -66px;
+  }
+}
 .report_gallery-image--3 {
+  width: 118px;
+  height: 169px;
   top: 124px;
   left: 84px;
   z-index: 2;
 }
+@media (min-width: 1024px) {
+  .report_gallery-image--3 {
+    width: 201px;
+    height: 286px;
+    top: 224px;
+    left: 374px;
+  }
+}
+@media (min-width: 1440px) {
+  .report_gallery-image--3 {
+    width: 251px;
+    height: 358px;
+    top: 354px;
+    left: 434px;
+  }
+}
 .report_gallery-image--4 {
+  width: 83px;
+  height: 120px;
   top: 224px;
   left: -8px;
 }
+@media (min-width: 1024px) {
+  .report_gallery-image--4 {
+    width: 169px;
+    height: 245px;
+    top: 314px;
+    left: 172px;
+  }
+}
+@media (min-width: 1440px) {
+  .report_gallery-image--4 {
+    width: 211px;
+    height: 306px;
+    top: 374px;
+    left: 172px;
+  }
+}
 .report_gallery-image--5 {
+  width: 104px;
+  height: 54px;
   top: 190px;
   left: 192px;
 }
+@media (min-width: 1024px) {
+  .report_gallery-image--5 {
+    width: 169px;
+    height: 92px;
+    top: 350px;
+    left: 592px;
+  }
+}
+@media (min-width: 1440px) {
+  .report_gallery-image--5 {
+    width: 221px;
+    height: 115px;
+    top: 500px;
+    left: 712px;
+  }
+}
 .report_gallery-image--6 {
+  width: 119px;
+  height: 84px;
   top: 320px;
   left: 160px;
 }
+@media (min-width: 1024px) {
+  .report_gallery-image--6 {
+    width: 174px;
+    height: 122px;
+    top: 200px;
+    left: 530px;
+  }
+}
+@media (min-width: 1440px) {
+  .report_gallery-image--6 {
+    width: 218px;
+    height: 153px;
+    top: 270px;
+    left: 640px;
+  }
+}
 .report_gallery-image--7 {
+  width: 88px;
+  height: 71px;
   top: 400px;
   left: 12px;
+}
+@media (min-width: 1024px) {
+  .report_gallery-image--7 {
+    width: 191px;
+    height: 155px;
+    top: 30px;
+    left: 292px;
+  }
+}
+@media (min-width: 1440px) {
+  .report_gallery-image--7 {
+    width: 239px;
+    height: 194px;
+    top: 30px;
+    left: 262px;
+  }
 }
 
 .report_gallery-footer {
@@ -428,6 +644,22 @@ header + section {
   height: 28px;
   top: 452px;
   left: 220px;
+}
+@media (min-width: 1024px) {
+  .report_gallery-footer {
+    width: 56px;
+    height: 56px;
+    top: 740px;
+    left: 428px;
+  }
+}
+@media (min-width: 1440px) {
+  .report_gallery-footer {
+    width: 56px;
+    height: 56px;
+    top: 1042px;
+    left: 428px;
+  }
 }
 
 /* report gallery end */
@@ -438,13 +670,11 @@ header + section {
 }
 @media (min-width: 1024px) {
   .report_more {
-    margin: 120px 0 0;
+    margin: 180px 0 0;
   }
 }
 
 .funds_title {
-  font-family: "KTF Rublena", Arial, sans-serif;
-  font-weight: 900;
   font-size: 24px;
   text-align: center;
   margin: 56px auto 0;
@@ -491,8 +721,6 @@ header + section {
 }
 
 .funds_item_title {
-  font-family: "KTF Rublena", Arial, sans-serif;
-  font-weight: 900;
   font-size: 24px;
   margin-bottom: 4px;
 }
@@ -550,6 +778,11 @@ header + section {
 }
 @media (min-width: 1024px) {
   .requisites_eur, .requisites_usd {
+    padding: 20px 20px 48px;
+  }
+}
+@media (min-width: 1440px) {
+  .requisites_eur, .requisites_usd {
     padding: 20px 52px 48px;
   }
 }
@@ -563,8 +796,6 @@ header + section {
 }
 
 .requisites_title {
-  font-family: "KTF Rublena", Arial, sans-serif;
-  font-weight: 900;
   font-size: 62px;
 }
 @media (min-width: 1024px) {
@@ -624,7 +855,7 @@ header + section {
   margin: 36px auto 0;
 }
 .buttons > .button_donate {
-  font-size: 24px;
+  font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -642,11 +873,13 @@ header + section {
   }
 }
 .buttons > a {
+  font-size: 16px;
   flex: 1;
 }
 @media (min-width: 1024px) {
   .buttons > a {
     flex: 0;
+    font-size: inherit;
   }
 }
 .buttons > a + a {
@@ -665,9 +898,8 @@ header + section {
 }
 
 .team_title {
-  font-weight: 900;
   text-align: center;
-  font-size: 64px;
+  font-size: 38px;
 }
 @media (min-width: 1024px) {
   .team_title {
@@ -719,8 +951,7 @@ header + section {
   }
 }
 .team_member-name {
-  font-weight: 900;
-  font-size: 32px;
+  font-size: 24px;
   margin-top: 16px;
 }
 @media (min-width: 1024px) {
@@ -751,9 +982,8 @@ header + section {
 }
 
 .projects_title {
-  font-weight: 900;
   text-align: center;
-  font-size: 48px;
+  font-size: 38px;
 }
 @media (min-width: 1024px) {
   .projects_title {
@@ -801,7 +1031,6 @@ header + section {
   }
 }
 .projects_description-name {
-  font-weight: 900;
   font-size: 24px;
 }
 @media (min-width: 1024px) {
@@ -833,6 +1062,11 @@ footer {
   font-size: 14px;
   margin-top: 64px;
 }
+@media (min-width: 1024px) {
+  footer {
+    font-size: 24px;
+  }
+}
 
 .section_content.footer_content {
   z-index: 1;
@@ -844,16 +1078,9 @@ footer {
   display: flex;
   flex-wrap: wrap;
 }
-@media (min-width: 1024px) {
-  .footer_main {
-    max-width: 1300px;
-    margin: 0 auto;
-    font-size: 24px;
-  }
-}
 
 .footer_main-title {
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 @media (min-width: 1024px) {
@@ -873,6 +1100,7 @@ footer {
 
 @media (min-width: 1024px) {
   .footer_nav {
+    margin: 0 20px 0 40px;
     order: 1;
   }
   .footer_nav a {
@@ -882,7 +1110,9 @@ footer {
 
 @media (min-width: 1024px) {
   .footer_contacts {
+    margin: 0 40px 0 20px;
     order: 3;
+    text-align: right;
   }
 }
 
@@ -923,6 +1153,11 @@ footer {
   color: #626262;
   font-size: 12px;
 }
+@media (min-width: 1024px) {
+  .footer_main-input::placeholder {
+    font-size: 18px;
+  }
+}
 
 div.footer_main-signup {
   padding-top: 8px;
@@ -938,6 +1173,7 @@ div.footer_main-signup {
 @media (min-width: 1024px) {
   .footer_networks {
     margin-top: 24px;
+    justify-content: flex-end;
   }
 }
 
@@ -954,7 +1190,8 @@ div.footer_main-signup {
   .footer_network {
     width: 52px;
     height: 52px;
-    margin-right: 20px;
+    margin-left: 20px;
+    margin-right: 0;
     border-radius: 12px;
   }
   .footer_network svg {
@@ -975,14 +1212,14 @@ div.footer_main-signup {
 }
 
 .footer_form {
-  flex: 2;
+  flex: 1.5;
   margin-top: 12px;
 }
 @media (min-width: 1024px) {
   .footer_form {
+    flex: 1;
+    margin: 0 20px;
     order: 2;
-    max-width: 420px;
-    margin: 0 100px;
   }
 }
 
@@ -1003,6 +1240,7 @@ div.footer_main-signup {
 body {
   margin: 0;
   font-size: 18px;
+  font-family: "Mariupol", sans-serif;
 }
 @media (min-width: 1024px) {
   body {
@@ -1014,8 +1252,13 @@ body {
   box-sizing: border-box;
 }
 
+.rublena_bold, .button_donate, .header_content, .about_header-title-main, .about_main-content, .report_title, .funds_title, .funds_item_title, .requisites_title, .team_title, .team_member-name, .projects_title, .projects_description-name {
+  font-family: "KTF Rublena", sans-serif;
+  font-weight: 700;
+}
+
 .bold {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .section_content {
@@ -1053,7 +1296,6 @@ body {
   padding: 8px 20px;
   border-radius: 12px;
   background-color: #9E76F8;
-  font-weight: 900;
   font-size: 14px;
   line-height: 1;
   color: white;

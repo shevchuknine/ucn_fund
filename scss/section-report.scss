@@ -3,10 +3,16 @@
     color: white;
     border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
-    margin-top: 196px;
+    margin-top: 156px;
     padding-bottom: 40px;
+
     @include laptop {
+        margin-top: 196px;
         padding-bottom: 120px;
+    }
+
+    @include desktop {
+        margin-top: 296px;
     }
 }
 
@@ -19,6 +25,10 @@
     @include laptop {
         width: 800px;
         height: 200px;
+    }
+
+    @include desktop {
+        height: 240px;
     }
 }
 
@@ -40,6 +50,14 @@
             top: -76px;
             left: 0px;
         }
+
+        @include desktop {
+            width: 354px;
+            height: 266px;
+
+            top: -104px;
+            left: -172px;
+        }
     }
 
     &--2 {
@@ -55,6 +73,14 @@
 
             top: -120px;
             left: 200px;
+        }
+
+        @include desktop {
+            width: 354px;
+            height: 266px;
+
+            top: -200px;
+            left: 140px;
         }
     }
 
@@ -73,6 +99,11 @@
             top: -20px;
             left: 380px;
         }
+
+        @include desktop {
+            width: 232px;
+            height: 157px;
+        }
     }
 
     &--4 {
@@ -90,16 +121,34 @@
             top: -116px;
             left: 520px;
         }
+
+        @include desktop {
+            width: 354px;
+            height: 266px;
+
+            top: -156px;
+            left: 580px;
+        }
     }
 }
 
 .report_title {
+    @extend .rublena_bold;
+
     margin: 0;
     text-transform: uppercase;
     text-align: center;
-    font-size: 36px;
-    font-weight: 900;
-    line-height: 36px;
+    font-size: 35px;
+    line-height: 30px;
+
+    @include laptop {
+        font-size: 84px;
+        line-height: 84px;
+    }
+
+    @include desktop {
+        font-size: 104px;
+    }
 }
 
 .report_text {
@@ -128,13 +177,30 @@
     position: relative;
 
     @include laptop {
+        width: 920px;
+        height: 500px;
         margin: 100px auto 0;
+    }
+
+    @include desktop {
+        height: 800px;
     }
 }
 
 .report_gallery-background {
-    width: 100%;
-    height: 400px;
+    @include laptop {
+        transform: rotate(90deg);
+        height: 800px;
+        position: absolute;
+        left: 180px;
+        top: -120px;
+    }
+
+    @include desktop {
+        height: 1160px;
+        left: 70px;
+        top: -190px;
+    }
 }
 
 .report_gallery-image {
@@ -142,39 +208,173 @@
     border-radius: 12px;
 
     &--1 {
+        width: 101px;
+        height: 72px;
+
         top: 12px;
         left: 152px;
+
+        @include laptop {
+            width: 220px;
+            height: 158px;
+
+            top: 72px;
+            left: 622px;
+            z-index: 2;
+        }
+
+        @include desktop {
+            width: 275px;
+            height: 198px;
+
+            top: 92px;
+            left: 722px;
+            z-index: 2;
+        }
     }
 
     &--2 {
+        width: 93px;
+        height: 123px;
+
         top: 28px;
         left: 0px;
+
+        @include laptop {
+            width: 230px;
+            height: 304px;
+
+            top: 72px;
+            left: 24px;
+        }
+
+        @include desktop {
+            width: 287px;
+            height: 380px;
+
+            top: 142px;
+            left: -66px;
+        }
     }
 
     &--3 {
+        width: 118px;
+        height: 169px;
+
         top: 124px;
         left: 84px;
         z-index: 2;
+
+        @include laptop {
+            width: 201px;
+            height: 286px;
+            top: 224px;
+            left: 374px;
+        }
+
+        @include desktop {
+            width: 251px;
+            height: 358px;
+
+            top: 354px;
+            left: 434px;
+        }
     }
 
     &--4 {
+        width: 83px;
+        height: 120px;
+
         top: 224px;
         left: -8px;
+
+        @include laptop {
+            width: 169px;
+            height: 245px;
+
+            top: 314px;
+            left: 172px;
+        }
+
+        @include desktop {
+            width: 211px;
+            height: 306px;
+
+            top: 374px;
+            left: 172px;
+        }
     }
 
     &--5 {
+        width: 104px;
+        height: 54px;
+
         top: 190px;
         left: 192px;
+
+        @include laptop {
+            width: 169px;
+            height: 92px;
+
+            top: 350px;
+            left: 592px;
+        }
+
+        @include desktop {
+            width: 221px;
+            height: 115px;
+
+            top: 500px;
+            left: 712px;
+        }
     }
 
     &--6 {
+        width: 119px;
+        height: 84px;
+
         top: 320px;
         left: 160px;
+
+        @include laptop {
+            width: 174px;
+            height: 122px;
+
+            top: 200px;
+            left: 530px;
+        }
+
+        @include desktop {
+            width: 218px;
+            height: 153px;
+
+            top: 270px;
+            left: 640px;
+        }
     }
 
     &--7 {
+        width: 88px;
+        height: 71px;
+
         top: 400px;
         left: 12px;
+
+        @include laptop {
+            width: 191px;
+            height: 155px;
+
+            top: 30px;
+            left: 292px;
+        }
+
+        @include desktop {
+            width: 239px;
+            height: 194px;
+
+            top: 30px;
+            left: 262px;
+        }
     }
 }
 
@@ -184,6 +384,20 @@
     height: 28px;
     top: 452px;
     left: 220px;
+
+    @include laptop {
+        width: 56px;
+        height: 56px;
+        top: 740px;
+        left: 428px;
+    }
+
+    @include desktop {
+        width: 56px;
+        height: 56px;
+        top: 1042px;
+        left: 428px;
+    }
 }
 /* report gallery end */
 
@@ -194,6 +408,6 @@
     justify-content: center;
 
     @include laptop {
-        margin: 120px 0 0;
+        margin: 180px 0 0;
     }
 }

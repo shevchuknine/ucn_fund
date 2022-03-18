@@ -1,6 +1,6 @@
 .funds_title {
-    font-family: 'KTF Rublena', Arial, sans-serif;
-    font-weight: 900;
+    @extend .rublena_bold;
+
     font-size: 24px;
     text-align: center;
     margin: 56px auto 0;
@@ -44,8 +44,8 @@
 }
 
 .funds_item_title {
-    font-family: 'KTF Rublena', Arial, sans-serif;
-    font-weight: 900;
+    @extend .rublena_bold;
+
     font-size: 24px;
     margin-bottom: 4px;
 
@@ -99,6 +99,10 @@
     border-radius: 32px;
 
     @include laptop {
+        padding: 20px 20px 48px;
+    }
+
+    @include desktop {
         padding: 20px 52px 48px;
     }
 }
@@ -112,8 +116,8 @@
 }
 
 .requisites_title {
-    font-family: 'KTF Rublena', Arial, sans-serif;
-    font-weight: 900;
+    @extend .rublena_bold;
+
     font-size: 62px;
 
     @include laptop {
@@ -169,7 +173,7 @@
 
 
     & > .button_donate {
-        font-size: 24px;
+        font-size: 18px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -186,10 +190,12 @@
     }
 
     & > a {
+        font-size: 16px;
         flex: 1;
 
         @include laptop {
             flex: 0;
+            font-size: inherit;
         }
 
         & + a {
